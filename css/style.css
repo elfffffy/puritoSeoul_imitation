@@ -1392,7 +1392,7 @@ body.on::after {
 }
 
 .section05 .inner .text h3 {
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-family: var(--engFont);
     font-weight: 400;
 }
@@ -2085,5 +2085,35 @@ body.on::after {
         width: 15px;
         height: 15px;
         right: -20px;
+    }
+    .section01 .swiper .swiper-slide .text {
+        padding: 2.5rem 25px 2.5rem;
+    }
+
+    .section01 .swiper .swiper-slide {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section01 .swiper .swiper-slide img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section05 .inner .content .image {
+        width: 60%;
+    }
+
+    .section05 .inner .content .text {
+        width: 39%;
+    }
+
+    .section05 .inner .text p {
+        font-size: 16px;
+    }
+
+    .footer .inner .text {
+        width: 50%;
     }
 }
