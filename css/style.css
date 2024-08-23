@@ -2176,6 +2176,10 @@ body.on::after {
     .section01 .img_box .text h3 {
         font-size: 55px;
     }
+
+    .section02 .content .tab_menu .menu_list li a p {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 890px) {
