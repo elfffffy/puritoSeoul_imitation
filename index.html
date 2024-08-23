@@ -105,7 +105,7 @@
             let mobileNav = $('.mobile_nav');
             let mobileClose = $('.mobile_nav .close');
 
-            mobileMenu.click(function(){
+            mobileMenu.click(function () {
                 mobileDepth02Box.hide();
                 mobileNav.css('right', '-50%');
                 mobileNav.fadeIn(0);
@@ -114,7 +114,7 @@
                 $('body').addClass('on');
             })
 
-            mobileClose.click(function(){
+            mobileClose.click(function () {
                 mobileNav.fadeOut(200);
                 $('body').removeClass('scroll');
                 $('body').removeClass('on');
@@ -124,14 +124,14 @@
             let mobileDepth02Box = $('.mobile_nav .depth02_box');
             let boxTitle = $('.depth02_box .title');
 
-            if(mobileDepth01.next().css('display') === 'none') {
+            if (mobileDepth01.next().css('display') === 'none') {
                 mobileDepth01.addClass('on');
             }
 
-            mobileDepth01.click(function(){
+            mobileDepth01.click(function () {
                 $(this).next().fadeIn();
             })
-            boxTitle.click(function(){
+            boxTitle.click(function () {
                 mobileDepth02Box.fadeOut();
             })
         })
@@ -827,7 +827,7 @@
                             </ul><!-- .depth02 end -->
                         </div><!-- .depth02_box end -->
                     </li>
-                    
+
                     <li>
                         <div class="gnb_img">
                             <figure>
@@ -843,7 +843,7 @@
                     </li>
                 </ul><!-- .gnb end -->
             </div><!-- .mobile_nav end -->
-            
+
         </div><!-- .inner end -->
     </header><!-- .header end -->
 
@@ -1152,9 +1152,9 @@
     <footer class="footer">
         <div class="inner">
             <div class="text">
-                <h3>퓨리토 서울은 한국의 원료와 문화에서</h3>
-                <h3>영감을 받아 즐거운 감각적 경험을 만드는</h3>
-                <h3>한국의 컨템포러리 스킨케어 브랜드입니다.</h3>
+                <h3>퓨리토 서울은 한국의 원료와 문화에서 <br>
+                    영감을 받아 즐거운 감각적 경험을 만드는<br>
+                    한국의 컨템포러리 스킨케어 브랜드입니다.</h3>
             </div><!-- .text end -->
             <div class="info">
                 <ul class="content">
@@ -1224,12 +1224,23 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".bestItems", {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+
+                891: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
         });
 
         var swiper = new Swiper(".recommand_items", {
