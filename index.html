@@ -992,6 +992,34 @@
                         </div><!-- box end -->
                     </div><!-- .image -->
                 </div><!-- .content -->
+                <div class="content2">
+                        <ul class="menu_list">
+                            <li class="on">
+                                <a href="#">
+                                    <span>강력한 진정</span>
+                                    <p>한국의 센텔라 아시아티카</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>풍부한 수분</span>
+                                    <p>해양심층수</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>시간초월 웰=에이징</span>
+                                    <p>제주 수국</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>튼튼한 피부 장벽</span>
+                                    <p>담양 대나무</p>
+                                </a>
+                            </li>
+                        </ul><!-- .menu_list end -->
+                </div><!-- .content2 -->
                 <div class="btn">
 
                     <span>
@@ -1225,20 +1253,25 @@
     <script>
         var swiper = new Swiper(".bestItems", {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 10,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                480: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                401: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
                 },
 
-                891: {
+                481: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+
+                768: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 10,
                 }
             }
         });
