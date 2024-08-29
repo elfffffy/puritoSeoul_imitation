@@ -145,7 +145,7 @@ body.on::after {
     width: 100%;
     z-index: 99;
     background-color: #fff;
-    /* border-bottom: 1px solid #333; */
+    border-bottom: 1px solid #ccc;
 
 }
 
