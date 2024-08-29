@@ -2339,6 +2339,9 @@ body.on::after {
 }
 
 @media screen and (max-width: 767px) {
+    .mobile_nav .gnb li .depth02_box {
+        width: 65%;
+    }
     .section02 .content {
         display: none;
     }
@@ -2538,6 +2541,10 @@ body.on::after {
 @media screen and (max-width: 480px) {
     html {
         font-size: 37.5%;
+    }
+
+    .mobile_nav .gnb li .depth02_box {
+        width: 100%;
     }
 
     .inner {
