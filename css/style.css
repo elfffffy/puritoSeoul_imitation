@@ -282,6 +282,7 @@ body.on::after {
     font-weight: 700;
     padding: 20px 0;
     margin-bottom: 10px;
+    cursor: default;
 }
 
 .header .inner .pc_nav .depth02_box .depth02 .depth02_list {
